@@ -15,17 +15,17 @@ public class AlbumResource {
     @Autowired
     private AlbumService albumService;
 
-    @GetMapping("/album")
+    /*@GetMapping("/album")
     public Album getUser(){
         return  albumService.getAlbum();
-    }
+    }*/
 
     @PostMapping("/album")
     public Album saveAlbum(@RequestBody Album album){
         return albumService.saveAlbum(album);
     }
 
-    @GetMapping("/allAlbums")
+    @GetMapping("/Album")
     public List<Album> getAllAlbums(){
         return albumService.getAllAlbums();
     }
